@@ -1,0 +1,11 @@
+CREATE TABLE topicos (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT NULL,
+    mensaje VARCHAR(400) NOT NULL,
+    fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    estado TINYINT DEFAULT 1,
+    autor_id BIGINT NOT NULL,
+    curso_id BIGINT NOT NULL,
+
+    PRIMARY KEY (id)
+);
