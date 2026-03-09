@@ -1,14 +1,13 @@
-package com.foroHub.foroHub.topico;
+package com.foroHub.foroHub.domain.topico;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record DatosActualizacionTopico(
-        @NotNull Long id,
-        @NotBlank
-        String titulo,
+public record DatosRegistroTopico(
+        @NotBlank String titulo,
         @NotBlank String mensaje,
         @NotNull Long autorId,
         @NotNull Long cursoId
+
 ) {
 }
